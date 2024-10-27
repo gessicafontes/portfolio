@@ -1,0 +1,19 @@
+.hero {
+  height: 40vh;
+  padding: 3em;
+  border-bottom: 1px solid #AC9BD2;
+}
+
+.icons {
+  display: flex;
+  justify-content: right;
+  gap: 12px;
+}
+
+.icons img {
+  transition: transform .3s ease;
+}
+
+.icons img:hover{
+  transform: scale(1.2);
+}

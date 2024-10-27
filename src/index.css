@@ -1,8 +1,9 @@
 body {
-  background-color: #F6FCFF;
+  background-color: #2E1276;
   padding: 0;
   margin: 0;
   font-family: "Montserrat", sans-serif;
+  color: #FFFFFF;
 }
 
 a,
@@ -20,4 +21,13 @@ nav button {
 a:hover, 
 nav button:hover {
   color: #bbb;
+}
+
+h1 {
+  font-size: 3em;
+  line-height: 1.25em;
+}
+
+span {
+  color: #D5A5FF;
 }
