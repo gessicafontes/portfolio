@@ -5,7 +5,7 @@
   min-height: 100vh;
 }
 
-h2, h3, p {
+h1, h2, h3, p {
  text-align: center;
 }
 
@@ -35,4 +35,11 @@ h2, h3, p {
 .carousel {
   cursor: grab;
   overflow: hidden;
+}
+
+.imgAlign {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

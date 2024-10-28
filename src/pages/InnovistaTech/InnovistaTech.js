@@ -18,21 +18,26 @@ import restUpsert from '../../assets/imgs/innovistaTech/restupsertaccountpostama
 
 const carouselImagesCountry = [countryObject, countryObjectError, countryFlow]
 const carouselImagesAccount = [accountCountryField, accountDescriptionCountryField, accountAttTotalValue, accountEmailSettings]
+const carouselImagesRest = [restInsert, restUpsert]
 
 const InnovistaTech = () => {
   const carouselCountry = useRef();
   const carouselAccount = useRef();
+  const carouselRest = useRef();
+
   const [widthCountry, setWidthCountry] = useState(0);
   const [widthAccount, setWidthAccount] = useState(0);
+  const [widthRest, setWidthRest] = useState(0);
 
   useEffect(() => {
     setWidthCountry(carouselCountry.current?.scrollWidth - carouselCountry.current?.offsetWidth)
     setWidthAccount(carouselAccount.current?.scrollWidth - carouselAccount.current?.offsetWidth)
+    setWidthRest(carouselAccount.current?.scrollWidth - carouselAccount.current?.offsetWidth)
   }, [])
 
   return (
     <div className={styles.conteiner}>
-      <img src={logo} alt="Logo do Innovista Tech" />
+      <div className={styles.imgAlign}><img src={logo} alt="Logo do Innovista Tech" /></div>
       <h1>Innovista Tech</h1>
       <div className={styles.organization}>
         <h2>Organização</h2>
@@ -82,12 +87,28 @@ const InnovistaTech = () => {
           </motion.div>
         </motion.div>
       <h3>Pedido (Pedido)</h3>
-      <img src={orderJob} alt="" />
+      <div className={styles.imgAlign}><img src={orderJob} alt="Pedido Batch" /></div>
       <h2>LWC</h2>
-      <img src={ordersLwc} alt="" />
+      <div className={styles.imgAlign}>
+        <img src={ordersLwc} alt="Lwc de Pedidos" />
+      </div>
       <h2>REST</h2>
-      <img src={restInsert} alt="" />
-      <img src={restUpsert} alt="" />
+      <motion.div ref={carouselRest} className={styles.carousel} whileTap={{ cursor: "grabbing" }}>
+          <motion.div 
+          className={styles.inner}
+          drag="x"
+          dragConstraints={{ right: 0, left: -widthRest}}
+          initial={{ x: 100}}
+          animate={{ x: 0 }}
+          transition={{ duration: 0.8 }}
+          >
+            {carouselImagesRest.map(image => (
+              <motion.div className={styles.item} key={image}>
+                <img src={image} alt='Imagem do Carrosel'></img>
+              </motion.div>
+            ))}
+          </motion.div>
+        </motion.div>
     </div>
   )
 }

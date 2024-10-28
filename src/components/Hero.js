@@ -1,7 +1,6 @@
 import styles from './Hero.module.css'
 import iconLinkedin from '../assets/imgs/icon-linkedin.svg'
 import iconGithub from '../assets/imgs/icon-github.svg'
-import Button from './Button'
 
 const Hero = () => {
   return (
@@ -20,7 +19,7 @@ const Hero = () => {
           </a>
         </div>
         <h1><span>Hello!</span> <br /> I’m a <span>Fullstack Developer.</span></h1>
-        <Button>button</Button>
+        
       </div>
     </section>
   )
