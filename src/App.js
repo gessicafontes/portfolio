@@ -4,6 +4,7 @@ import Home from './pages/Home/Home';
 import Projects from './pages/Projects/Projects';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import InnovistaTech from './pages/InnovistaTech/InnovistaTech';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Routes>
             <Route path='/' element={<Home />}/>
             <Route path='/projects' element={<Projects />}/>
+            <Route path='/innovistaTech' element={<InnovistaTech />}/>
           </Routes>
         </div>
         <Footer />

@@ -52,6 +52,11 @@
 
 .slider:hover .item {
   animation-play-state: paused!important;
+  filter: grayscale(1);
+}
+
+.slider .item:hover{
+  filter: grayscale(0);
 }
 
 .item:hover {

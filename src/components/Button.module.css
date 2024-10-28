@@ -1,0 +1,17 @@
+button {
+  padding: .4em .6em;
+  background-color: #D690F6;
+  background-image: linear-gradient(to right, #D690F6, #8e45dc);
+  color: #FFFFFF;
+  border-radius: 1.875em;
+  border: none;
+  font-size: 1.5em;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  transition: .4s ease;
+  min-width: 100px;
+}
+
+button:hover {
+  transform: scale(1.05);
+}

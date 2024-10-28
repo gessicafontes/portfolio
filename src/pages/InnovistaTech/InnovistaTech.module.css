@@ -1,0 +1,38 @@
+.conteiner {
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+h2, h3, p {
+ text-align: center;
+}
+
+.organization div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.organization div img:hover {
+  transform: scale(1.2);
+}
+
+.inner {
+  display: flex;
+}
+
+.item {
+  padding: 14px;
+}
+
+.item img {
+  border-radius: 12px;
+  pointer-events: none;
+}
+
+.carousel {
+  cursor: grab;
+  overflow: hidden;
+}

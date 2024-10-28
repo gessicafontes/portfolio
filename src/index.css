@@ -31,3 +31,9 @@ h1 {
 span {
   color: #D5A5FF;
 }
+
+.mw1200 {
+ max-width: 1200px;
+ width: 100%;
+ margin-inline: auto;
+}
