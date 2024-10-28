@@ -2,11 +2,16 @@
   width: 80vw;
   height: 700px;
   margin: 0 auto;
-  
 }
 
 h2 {
   padding-block: 50px;
+}
+
+.projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card {
@@ -51,7 +56,6 @@ h2 {
 
 .wrap {
   width: 100%;
-  border-bottom: 1px solid #AC9BD2;
 }
 
 

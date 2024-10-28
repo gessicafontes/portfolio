@@ -1,6 +1,4 @@
 
-
-
 .wrap {
   width: 100%;
 }
@@ -16,4 +14,9 @@ h2 {
   justify-content: center;
   align-items: center;
   height: 500px;  
+  border-top: 1px solid #AC9BD2;
+  border-bottom: 1px solid #AC9BD2;
+  background-color: #492196;
+  width: 1200px;
+  margin: 0 auto;
 }

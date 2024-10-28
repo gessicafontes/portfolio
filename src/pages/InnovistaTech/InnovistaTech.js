@@ -31,7 +31,11 @@ const InnovistaTech = () => {
 
   useEffect(() => {
     setWidthCountry(carouselCountry.current?.scrollWidth - carouselCountry.current?.offsetWidth)
+  }, [])
+  useEffect(() => {
     setWidthAccount(carouselAccount.current?.scrollWidth - carouselAccount.current?.offsetWidth)
+  }, [])
+  useEffect(() => {
     setWidthRest(carouselRest.current?.scrollWidth - carouselRest.current?.offsetWidth)
   }, [])
 

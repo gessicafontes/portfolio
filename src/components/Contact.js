@@ -7,7 +7,7 @@ const Contact = () => {
       <div className={styles.mw1200}>
         <div className={styles.content}>
           <h2>Contact</h2>
-          <div><Button>Enviar E-mail</Button></div>
+          <div><a href="mailto:gessica.pimentel.fontes@gmail.com"><Button>Enviar E-mail</Button></a></div>
         </div>
       </div>
     </section>
